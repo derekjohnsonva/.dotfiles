@@ -1,10 +1,13 @@
-[user]
-	name = Jake Wiesler
-	email = jakewiesler@gmail.com
-[core]
-	excludesfile = ~/.gitignore_global
-    editor = nvim
-[pull]
-	ff = only
 [init]
 	defaultBranch = main
+[user]
+	name = Derek Johnson
+	email = dej3tc@virginia.edu
+
+[alias]
+    s = status
+    co = checkout
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+
+[core]
+	editor = nvim
