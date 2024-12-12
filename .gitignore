@@ -1,5 +1,8 @@
-nvim/.config/nvim/undodir/*
-nvim/.config/nvim/plugged/*
 .DS_Store
 vim/.vim/bundle
+.git-credentials
+nvim/.config/nvim/plugin/packer_compiled.lua
+antigen.zsh
+vim/bundle/Vundle.vim
+
 .git-credentials
