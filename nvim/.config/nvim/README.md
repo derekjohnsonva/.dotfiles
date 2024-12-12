@@ -1,10 +1,4 @@
-# Derek's NVIM Config
+# 💤 LazyVim
 
-## TODO
-
-* I should probably do more work to make WhichKey more user-friendly.
-Right now it is kind of difficult to use.
-
-* Make the status line look pretty
-
-* Standardize the LSP "goto" methods so that they start with the leader key.
+A starter template for [LazyVim](https://github.com/LazyVim/LazyVim).
+Refer to the [documentation](https://lazyvim.github.io/installation) to get started.
