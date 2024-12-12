@@ -2,3 +2,4 @@ nvim/.config/nvim/undodir/*
 nvim/.config/nvim/plugged/*
 .DS_Store
 vim/.vim/bundle
+.git-credentials
