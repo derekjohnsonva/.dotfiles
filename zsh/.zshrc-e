@@ -63,5 +63,3 @@ antigen apply
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 eval "$(/Users/derekjohnson/.local/bin/mise activate zsh)"
-
-[ -f "/Users/derekjohnson/.ghcup/env" ] && . "/Users/derekjohnson/.ghcup/env" # ghcup-env
