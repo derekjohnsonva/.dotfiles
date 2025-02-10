@@ -1,12 +1,12 @@
 # .dotfiles
 
 1. Clone this repository
-2. Run `install.sh`
+2. Run `sudo install.sh`
 3. Open up new window to initiate `zsh` shell
+4. Optional - run `gh auth login` to add git credentials
 
 ### Current issues
 
-- installing `nvim` plugins in `--headless` causes error output, but doesn't break installation
 - Would like to improve the install script
 - Handle installation on different OS (MacOS, Linux, WSL2)
 
