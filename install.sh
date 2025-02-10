@@ -6,18 +6,18 @@ OS="$(uname -s)"
 # Install packages based on the OS
 if [ "$OS" = "Linux" ]; then
   # Ubuntu or other Debian-based systems
-  sudo apt update
-  sudo apt install git zsh neovim gcc stow curl fzf ripgrep -y
-  sudo apt install gh -y
+  apt update
+  apt install git zsh neovim gcc stow curl fzf ripgrep -y
+  apt install gh -y
 
   # Install Lazygit on Ubuntu
   LAZYGIT_VERSION=$(curl -s "https://api.github.com/repos/jesseduffield/lazygit/releases/latest" | grep -Po '"tag_name": *"v\K[^"]*')
   curl -Lo lazygit.tar.gz "https://github.com/jesseduffield/lazygit/releases/download/v${LAZYGIT_VERSION}/lazygit_${LAZYGIT_VERSION}_Linux_x86_64.tar.gz"
   tar xf lazygit.tar.gz lazygit
-  sudo install lazygit -D -t /usr/local/bin/
+  install lazygit -D -t /usr/local/bin/
 
   # Add zsh as a login shell
-  command -v zsh | sudo tee -a /etc/shells
+  command -v zsh | tee -a /etc/shells
 
 elif [ "$OS" = "Darwin" ]; then
   # macOS
