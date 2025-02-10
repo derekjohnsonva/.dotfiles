@@ -48,6 +48,7 @@ alias lg="lazygit"
 # FZF
 export FZF_DEFAULT_COMMAND="rg --files --hidden --glob '!.git'"
 export FZF_DEFAULT_OPTS="--height=40% --layout=reverse --border --margin=1 --padding=1"
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # PATH
 # export PATH=${PATH}:/usr/local/go/bin
@@ -61,7 +62,5 @@ export BAT_THEME="gruvbox-dark"
 antigen theme romkatv/powerlevel10k
 antigen apply
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-eval "$(/Users/derekjohnson/.local/bin/mise activate zsh)"
 
 [ -f "/Users/derekjohnson/.ghcup/env" ] && . "/Users/derekjohnson/.ghcup/env" # ghcup-env
