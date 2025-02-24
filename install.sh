@@ -7,8 +7,13 @@ OS="$(uname -s)"
 if [ "$OS" = "Linux" ]; then
   # Ubuntu or other Debian-based systems
   apt update
-  apt install git zsh neovim gcc stow curl fzf ripgrep -y
+  apt install git zsh neovim gcc stow curl fzf ripgrep fd-find -y
   apt install gh -y
+  # This is needed for language servers in neovim
+  apt install -y python3-venv
+  # Setup nvm. This is good to have and is needed for some language servers
+  curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
+  nvm install --lts
 
   # Install Lazygit on Ubuntu
   LAZYGIT_VERSION=$(curl -s "https://api.github.com/repos/jesseduffield/lazygit/releases/latest" | grep -Po '"tag_name": *"v\K[^"]*')
