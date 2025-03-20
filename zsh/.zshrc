@@ -51,10 +51,17 @@ export FZF_DEFAULT_OPTS="--height=40% --layout=reverse --border --margin=1 --pad
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # PATH
-# export PATH=${PATH}:/usr/local/go/bin
-# export PATH=${PATH}:${HOME}/go/bin
+export PATH=${PATH}:${HOME}/bin
 
+# Config for Bat, the cat alternative https://github.com/sharkdp/bat
 export BAT_THEME="gruvbox-dark"
+# On linux, the apt bat package defaults to using the "batcat" command. I don't like this
+# so we will alias it to bat
+if [[ "$(uname)" == "Linux" ]]; then
+    alias cat="batcat"
+    alias bat="batcat"
+fi
+
 
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
