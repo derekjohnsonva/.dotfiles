@@ -10,3 +10,10 @@ keymap("n", "<S-Up>", ":resize +2<CR>", { desc = "Resize up", noremap = true, si
 keymap("n", "<S-Down>", ":resize -2<CR>", { desc = "Resize down", noremap = true, silent = true })
 keymap("n", "<S-Right>", ":vertical resize -2<CR>", { desc = "Resize left", noremap = true, silent = true })
 keymap("n", "<S-Left>", ":vertical resize +2<CR>", { desc = "Resize right", noremap = true, silent = true })
+
+-- LSP stuff
+-- toggle virtual lines
+vim.keymap.set("n", "<leader>xK", function()
+  local new_config = not vim.diagnostic.config().virtual_lines
+  vim.diagnostic.config({ virtual_lines = new_config })
+end, { desc = "Toggle diagnostic virtual_lines" })
