@@ -6,3 +6,7 @@ antigen.zsh
 vim/bundle/Vundle.vim
 
 .git-credentials
+nvim/.config/exercism
+nvim/.config/htop
+nvim/.config/lazygit
+nvim/.config/ngrok
