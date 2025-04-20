@@ -46,6 +46,8 @@ fi
 # Install antigen
 curl -L git.io/antigen >~/antigen.zsh
 
+# Adding this config makes it so the nvim stow command does not create the .config folder
+mkdir $HOME/.config
 # Stow dotfiles
 stow git
 stow vim
